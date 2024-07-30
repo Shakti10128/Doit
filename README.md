@@ -28,7 +28,7 @@ npm install
 
 ## Tech Stack Used
 1: React  
-2: JavaScript
+2: JavaScript  
 3: React-Redux  
 4: Redux-Toolkit  
 5: Tailwind CSS  
