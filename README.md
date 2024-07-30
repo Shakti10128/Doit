@@ -17,7 +17,23 @@ You will need some packages to build this project
 #### Run the Command
 npm install
 
+ ## App Functionallity  
+ 1: Create A Task  
+ 2: Update A Task  
+ 3: Delete A Task  
+ 4: Mars A Task as Completed  
+ 5: Analyze Completed & Pending Tasks  
+ 6: Full Responsive  
 
+
+## Tech Stack Used
+1: React  
+2: React-Redux  
+3: Redux-Toolkit  
+4: Tailwind CSS  
+5: Chart.js  
+6: React Icons  
+7: Local Storage
 
 
 ### Happy Coding
