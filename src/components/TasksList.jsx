@@ -70,7 +70,7 @@ const TasksList = () => {
             tasks.map((task)=>{
                 return task?.isCompleted === false && <div className='h-16 border-t-2 border-b-2 flex items-center justify-between' key={task?.id}>
                         <div className='flex gap-3 items-center text-center pl-4'>
-                            <input type="checkbox" className={`w-4 h-4 ${task?.isCompleted && "peer-checked:bg-green-600"}`} checked={task?.isCompleted} onChange={()=> markCompleteTaskHandler(task)}/>
+                            <input type="checkbox" className={`w-4 h-4 ${task?.isCompleted && "peer-checked:bg-green-600"}`} checked={task?.isCompleted} onClick={()=> markCompleteTaskHandler(task)}/>
                             <h3>{task?.title}</h3>
                         </div>
                         <div className='flex gap-2 text-xl pr-6'>
@@ -93,7 +93,7 @@ const TasksList = () => {
                     tasks.map((task)=>{
                         return task?.isCompleted === true &&  <div className='h-16 border-t-2 border-b-2 flex items-center justify-between' key={task?.id}>
                                 <div className='flex gap-6 items-center justify-center pl-4'>
-                                    <input type="checkbox" className='w-4 h-4' checked={task?.isCompleted} onChange={()=> markCompleteTaskHandler(task)}/>
+                                    <input type="checkbox" className='w-4 h-4' checked={task?.isCompleted} onClick={()=> markCompleteTaskHandler(task)}/>
                                     <h3 className='line-through'>{task?.title}</h3>
                                 </div>
                                 <div className='flex gap-2 text-xl pr-6'>
@@ -111,7 +111,7 @@ const TasksList = () => {
         </div>
 
         {/* update Task popup */}
-        <div className={`flex flex-col self-center mx-auto gap-4 absolute md:w-[60%] z-10 bg-[#d8ebda] h-52 ${isUpdated ? "block opacity-100": ""} bottom-0 -top-32 opacity-5 rounded-md transition-all w-full`}>
+        <div className={`flex flex-col self-center mx-auto gap-4 absolute md:w-[60%] z-10 bg-[#d8ebda] h-52 ${isUpdated ? "block opacity-100": ""} bottom-0 -top-32 opacity-0 rounded-md transition-all w-full`}>
             <div className='flex items-center justify-center mt-12'>
                 <input type="text" value={taskValue} className='px-2 py-4 w-[90%] rounded-md
                 focus:outline-none
