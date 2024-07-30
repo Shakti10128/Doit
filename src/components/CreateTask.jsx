@@ -41,9 +41,9 @@ const CreateTask = () => {
     }
   return (
     <div>
-        <form className='flex flex-col justify-between py-2 gap-2 bg-[#EEf6EF] h-44 px-5'>
+        <form onSubmit={addTaskHandler} className='flex flex-col justify-between py-2 gap-2 bg-[#EEf6EF] h-44 px-5'>
            <div className='mt-10'>
-                <input type="text" placeholder='Add A Task' className='bg-[#EEf6EF] w-full focus:outline-none px-2 py-4 border-b-2'
+                <input type="text" placeholder='Add A Task' className='bg-[#EEf6EF] w-full px-2 py-4 border-b-2 focus:outline-none'
                 value={Task}
                 // whenever value will be changed, we will having the reference
                 onChange={(e)=> setTask(e.target.value)}
@@ -56,7 +56,7 @@ const CreateTask = () => {
             </div>
             <div className='font-bold bg-[#b4cab4] text-[#357937] px-4 py-1 rounded-md'>
                 {/* when the add task button will clicked, then we will triggered the add task handler */}
-                <button onClick={addTaskHandler}>
+                <button onClick={()=>addTaskHandler} className='cursor-pointer'>
                   ADD TASK
                 </button>
             </div>
