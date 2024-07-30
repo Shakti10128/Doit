@@ -28,12 +28,13 @@ npm install
 
 ## Tech Stack Used
 1: React  
-2: React-Redux  
-3: Redux-Toolkit  
-4: Tailwind CSS  
-5: Chart.js  
-6: React Icons  
-7: Local Storage
+2: JavaScript
+3: React-Redux  
+4: Redux-Toolkit  
+5: Tailwind CSS  
+6: Chart.js  
+7: React Icons  
+8: Local Storage
 
 
 ### Happy Coding
