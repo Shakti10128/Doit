@@ -21,7 +21,7 @@ npm install
  1: Create A Task  
  2: Update A Task  
  3: Delete A Task  
- 4: Mars A Task as Completed  
+ 4: Mark A Task as Completed  
  5: Analyze Completed & Pending Tasks  
  6: Full Responsive  
 
